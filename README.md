@@ -47,6 +47,9 @@ automate the processing of transfers in an Archivematica pipeline.
 
 - 7z (only for DIP creation script)
 
+## Sandbox Setup
+`sudo apt update && sudo apt install python3-venv && sudo apt install python3-virtualenv`
+
 ## Installation
 
 Follow each of the steps below to install automation-tools:
@@ -55,7 +58,7 @@ Follow each of the steps below to install automation-tools:
 
     ```shell
     sudo mkdir -p /usr/lib/archivematica/automation-tools &&
-    sudo mkdir /usr/share/python/automation-tools &&
+    sudo mkdir /usr/share/python3/automation-tools &&
     sudo mkdir -p /var/log/archivematica/automation-tools &&
     sudo mkdir /var/archivematica/automation-tools &&
     sudo mkdir /etc/archivematica/automation-tools
@@ -68,7 +71,7 @@ Follow each of the steps below to install automation-tools:
     sudo chown archivematica:archivematica /var/log/archivematica/automation-tools \
           /var/archivematica/automation-tools \
           /usr/lib/archivematica/automation-tools \
-          /usr/share/python/automation-tools \
+          /usr/share/python3/automation-tools \
            /etc/archivematica/automation-tools
     ```
 
@@ -82,7 +85,7 @@ Follow each of the steps below to install automation-tools:
 3. Clone the automation-tools repository into your `usr/lib` directory:
 
     ```shell
-    cd /usr/lib/archivematica/automation-tools/
+    cd /usr/lib/archivematica/
     git clone https://github.com/artefactual/automation-tools.git .
     ```
 
